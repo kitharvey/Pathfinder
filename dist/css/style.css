@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: white;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.buttons #btns {
+  margin: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  border: 2px solid #a0c8e2;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+
+.buttons #btns:hover {
+  background-color: #a0c8e2;
+}
+
+.grid {
+  margin: 20px;
+}
+
+.grid .node-row {
+  height: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.grid .node {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: #efefef;
+  outline: 0.25px solid white;
+}
+
+.grid .isEnd {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: tomato;
+  -webkit-animation: scaleDown 100ms ease-out;
+          animation: scaleDown 100ms ease-out;
+  cursor: pointer;
+}
+
+.grid .isStart {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: darkcyan;
+  -webkit-animation: scaleDown 100ms ease-out;
+          animation: scaleDown 100ms ease-out;
+  cursor: pointer;
+}
+
+.grid .node-visited {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: #a0c8e2;
+  outline: 0.25px solid white;
+  -webkit-animation: scaleUp 200ms ease-out;
+          animation: scaleUp 200ms ease-out;
+}
+
+.grid .node-shortest-path {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: #ffaa00;
+  -webkit-animation: scaleDown 50ms ease-out;
+          animation: scaleDown 50ms ease-out;
+}
+
+.grid .node-wall {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: #333333;
+  outline: 0.25px solid #555;
+  -webkit-animation: scaleDown 50ms ease-out;
+          animation: scaleDown 50ms ease-out;
+}
+
+@-webkit-keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  25% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  25% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

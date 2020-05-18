@@ -1,0 +1,16 @@
+{
+  "homepage": "https://github.com/kitharvey/kitharvey.github.io/Pathfinder",
+  "name": "path",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

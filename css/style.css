@@ -113,8 +113,8 @@ body {
   width: 20px;
   display: inline-block;
   background-color: #ffaa00;
-  -webkit-animation: scaleDown 50ms ease-out;
-          animation: scaleDown 50ms ease-out;
+  -webkit-animation: scaleUp2 100ms ease-out;
+          animation: scaleUp2 100ms ease-out;
 }
 
 .grid .node-wall {
@@ -123,48 +123,14 @@ body {
   display: inline-block;
   background-color: #333333;
   outline: 0.25px solid #555;
-  -webkit-animation: scaleDown 50ms ease-out;
-          animation: scaleDown 50ms ease-out;
-}
-
-@-webkit-keyframes scaleDown {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  25% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scaleDown {
-  0% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  25% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+  -webkit-animation: scaleDown 100ms ease-out;
+          animation: scaleDown 100ms ease-out;
 }
 
 @-webkit-keyframes scaleUp {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
-  }
-  25% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
   }
   100% {
     -webkit-transform: scale(1);
@@ -177,9 +143,49 @@ body {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
-  25% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleUp2 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleUp2 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
     -webkit-transform: scale(1);

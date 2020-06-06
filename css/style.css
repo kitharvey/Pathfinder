@@ -23,6 +23,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
+  overflow: hidden;
 }
 
 .buttons {

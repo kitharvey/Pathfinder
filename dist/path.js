@@ -6,7 +6,7 @@ const BTNS = document.querySelector(".buttons")
 const FIND = document.querySelector(".find-path")
 const RANDWALLS = document.querySelector(".random-walls")
 const CLR = document.querySelector(".clear")
-export const ROW = 40, COL = 90
+export const ROW = 40, COL = 70
 const speed = 10
 
 const animateAStar = (visitedNodesInOrder, nodesInShortestPathOrder, startNode, endNode) => {

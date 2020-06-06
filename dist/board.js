@@ -33,9 +33,9 @@ const nodesInitialize = () => {
 export const createNodesDOM = () => {
     nodesInitialize()
     let START_ROW = 20
-    let START_COL = 10
+    let START_COL = 20
     let END_ROW = 20
-    let END_COL = 83
+    let END_COL = 50
     let isPressed, objectStatus, nodeStatus
     for(let row = 0; row < ROW; row++){
         const NODEROWS = document.createElement("div")
@@ -91,10 +91,10 @@ export const createNodesDOM = () => {
                             objectStatus = undefined
                             nodeStatus = undefined
                             nodesDOM.className = 'node'
-                            START_ROW = 23
-                            START_COL = 10
-                            END_ROW = 23
-                            END_COL = 84
+                            START_ROW = 20
+                            START_COL = 20
+                            END_ROW = 20
+                            END_COL = 50
                             let startNode = document.getElementById(`node-${START_ROW}-${START_COL}`)
                             startNode.className = 'isStart'
                             let endNode = document.getElementById(`node-${END_ROW}-${END_COL}`)

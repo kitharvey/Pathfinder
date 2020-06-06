@@ -8,6 +8,7 @@
 }
 
 body {
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +22,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
   background-color: white;
 }
 
@@ -43,7 +43,7 @@ body {
 }
 
 .buttons #btns {
-  margin: 10px;
+  margin: 0 10px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -57,6 +57,36 @@ body {
 
 .buttons #btns:hover {
   background-color: #a0c8e2;
+}
+
+.instructions {
+  position: absolute;
+  z-index: 2;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  padding: 20px;
+  display: block;
+  -webkit-animation: scaleUp 200ms ease-out;
+          animation: scaleUp 200ms ease-out;
+}
+
+.instructions .start {
+  color: darkcyan;
+  font-weight: 700;
+}
+
+.instructions .end {
+  color: tomato;
+  font-weight: 700;
+}
+
+.instructions.close {
+  display: none;
 }
 
 .grid {

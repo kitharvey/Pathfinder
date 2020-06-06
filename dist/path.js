@@ -6,7 +6,7 @@ const BTNS = document.querySelector(".buttons")
 const FIND = document.querySelector(".find-path")
 const RANDWALLS = document.querySelector(".random-walls")
 const CLR = document.querySelector(".clear")
-export const ROW = 41, COL = 91
+export const ROW = 40, COL = 90
 const speed = 10
 
 const animateAStar = (visitedNodesInOrder, nodesInShortestPathOrder, startNode, endNode) => {
@@ -75,6 +75,7 @@ const randomWalls = () => {
     }
 }
 
+
 const findPath = () => {
     const {node, startNode, endNode} = getNodes()
     const visitedNodesInOrder = aStar(node, startNode, endNode, ROW, COL)
@@ -99,6 +100,9 @@ const Main = () => {
         clearWalls()
         clearPath()
     }
+    document.addEventListener('keydown', (event) => {
+        if(event.keyCode === 73) document.querySelector('.instructions').classList.toggle('close')
+    })
 }
 
 

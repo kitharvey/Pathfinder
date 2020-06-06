@@ -16,8 +16,6 @@ $path-color: #ffaa00;
 $out-line: .25px solid #555;
 $out-line2: .25px solid white;
 
-
-
 body{
     margin: 20px;
     display: flex;
@@ -25,6 +23,7 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: white;
+    overflow: hidden;
 }
 
 @mixin size {

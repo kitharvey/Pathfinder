@@ -23,20 +23,36 @@
 
 .instructions{
     position: absolute;
+    top: 10px;
+    right: 10px;
     z-index: 2;
     width: max-content;
     height: max-content;
-    background-color: white;
+    background: white;
     padding: 20px;
     display: block;
     animation: scaleUp 200ms ease-out;
+    border-radius: 20px;
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .closeInstruction{
+            cursor: pointer;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    span{
+        font-weight: 700;
+    }
     .start{
         color: darkcyan;
-        font-weight: 700;
     }
     .end{
         color: tomato;
-        font-weight: 700;
     }
 
     &.close{

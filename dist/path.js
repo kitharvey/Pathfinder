@@ -6,6 +6,7 @@ const BTNS = document.querySelector(".buttons")
 const FIND = document.querySelector(".find-path")
 const RANDWALLS = document.querySelector(".random-walls")
 const CLR = document.querySelector(".clear")
+const closeInstruction = document.querySelector(".closeInstruction")
 export const ROW = 40, COL = 70
 const speed = 10
 
@@ -64,14 +65,10 @@ const clearWalls = () => {
 
 const randomWalls = () => {
     for(let row = 0; row < ROW; row++){
-        setTimeout(() => {
         for(let col = 0; col < COL; col++){
-            setTimeout(() => {
-                const nodesDOM = document.getElementById(`node-${row}-${col}`)
-                if (Math.floor(Math.random()*4) === 0 && nodesDOM.className === 'node') nodesDOM.className = 'node-wall'
-            },speed * col)
+            const nodesDOM = document.getElementById(`node-${row}-${col}`)
+            if (Math.floor(Math.random()*4) === 0 && nodesDOM.className === 'node') nodesDOM.className = 'node-wall'
         }
-    },speed * row)
     }
 }
 
@@ -100,9 +97,9 @@ const Main = () => {
         clearWalls()
         clearPath()
     }
-    document.addEventListener('keydown', (event) => {
-        if(event.keyCode === 73) document.querySelector('.instructions').classList.toggle('close')
-    })
+    closeInstruction.onclick = (event) => {
+        document.querySelector('.instructions').classList.add('close')
+    }
 }
 
 

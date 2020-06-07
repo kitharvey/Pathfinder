@@ -62,6 +62,8 @@ body {
 
 .instructions {
   position: absolute;
+  top: 10px;
+  right: 10px;
   z-index: 2;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -69,21 +71,46 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: white;
+  background: white;
   padding: 20px;
   display: block;
   -webkit-animation: scaleUp 200ms ease-out;
           animation: scaleUp 200ms ease-out;
+  border-radius: 20px;
+}
+
+.instructions .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.instructions .header .closeInstruction {
+  cursor: pointer;
+}
+
+.instructions .header .closeInstruction:hover {
+  color: red;
+}
+
+.instructions span {
+  font-weight: 700;
 }
 
 .instructions .start {
   color: darkcyan;
-  font-weight: 700;
 }
 
 .instructions .end {
   color: tomato;
-  font-weight: 700;
 }
 
 .instructions.close {
